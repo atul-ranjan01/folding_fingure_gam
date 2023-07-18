@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+   <p> HOW MANY FINGURE IS MY FOLD </p>
+    <p><input type="text" id="guess">
+
+    <button id="check guess">check your result</button> 
+
+
+                                                              </p>
+
+
+
+
+</body>
+
+   <script type="text/javascript">
+   	
+
+     document.getElementById("check guess").onclick = function()
+     {
+
+        var randomNumber = Math.random();
+         randomNumber = randomNumber * 6;
+        randomNumber = Math.floor(randomNumber);
+
+        if (document.getElementById("guess").value == randomNumber) {
+
+          alert("yes");
+
+        }
+        else{
+
+        	alert("sorry"+randomNumber);
+        }
+
+
+
+
+     }
+
+
+
+
+
+
+
+   </script>
+
+
+
+
+
+</html>
